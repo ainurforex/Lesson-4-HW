@@ -10,19 +10,17 @@ public class Main {
     }
     public static  void homeWork1(){
         System.out.println("Home work 1");
-        int i=1;
-        String massage1="";
+        int i=0;
 
-        while(i<=10) {
-            massage1=massage1+i+" ";
-            i++;
+        while(i<10) {
+            System.out.print(++i+" ");
         }
-        System.out.println(massage1);
-        String massage2="";
-        for(int a=10;a>0;a--){
-            massage2=massage2+a+" ";
+        System.out.println();
+
+        for(;i>0;i--){
+            System.out.print(i+" ");
         }
-        System.out.println(massage2);
+        System.out.println();
         System.out.println("----------------------------------------------------------------");
     }
     public static  void homeWork2(){
@@ -42,12 +40,12 @@ public class Main {
         int minus200Year=currentYear-200;
         int plus100Year=currentYear+100;
         int cometPeriod=79;
-        int iterationYear=0;
-        while(iterationYear<=plus100Year){
-            if(iterationYear>=minus200Year&&iterationYear<=plus100Year){
-                System.out.println(iterationYear);
+
+        for(int year=minus200Year;year<=plus100Year;year++){
+            if(year%cometPeriod==0){
+                System.out.println(year);
             }
-            iterationYear=iterationYear+cometPeriod;
+
         }
         System.out.println("----------------------------------------------------------------");
     }
